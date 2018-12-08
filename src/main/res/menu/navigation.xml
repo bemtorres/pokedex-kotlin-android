@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/c_pokeballl"
+            android:title="@string/title_home"/>
+
+    <item
+            android:id="@+id/nav_todos"
+            android:icon="@drawable/c_pikachu"
+            android:title="@string/todos"/>
+
+    <item
+            android:id="@+id/nav_favorito"
+            android:icon="@drawable/c_insignia"
+            android:title="@string/favorito"/>
+</menu>
