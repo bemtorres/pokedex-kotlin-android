@@ -1,4 +1,4 @@
-package win.bemtorres.servicio.pokedex
+package win.bemtorres.servicio.pokedex.conexion
 
 import android.content.ContentValues
 import android.content.Context
@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
 import android.widget.Toast
+import win.bemtorres.servicio.pokedex.modelo.PokemonBD
 import java.lang.Exception
 import java.sql.SQLException
 
@@ -25,7 +26,7 @@ class ConexionSQL (val miContexto: Context,
         onCreate(db)
     }
 
-    fun insertarProkemon(po: Pokemon){
+    fun insertarProkemon(po: PokemonBD){
         try {
             val db = this.writableDatabase
             var cv = ContentValues()
@@ -66,8 +67,8 @@ class ConexionSQL (val miContexto: Context,
     //
 
 
-    fun listarPokemon() : ArrayList<Pokemon> {
-        var lista = ArrayList<Pokemon>()
+    fun listarPokemon() : ArrayList<PokemonBD> {
+        var lista = ArrayList<PokemonBD>()
         try {
             val db = this.writableDatabase
             var cursor: Cursor? = null
@@ -93,7 +94,25 @@ class ConexionSQL (val miContexto: Context,
                     val attack = cursor.getInt(15)
                     val hp = cursor.getInt(16)
 
-                    val pro = Pokemon(id,idP,nombre,imgM,imgF,imgShinyM,imgShinyF,tipo1,tipo2,h1,h2,speed,especialD,especialA,defense,attack,hp)
+                    val pro = PokemonBD(
+                        id,
+                        idP,
+                        nombre,
+                        imgM,
+                        imgF,
+                        imgShinyM,
+                        imgShinyF,
+                        tipo1,
+                        tipo2,
+                        h1,
+                        h2,
+                        speed,
+                        especialD,
+                        especialA,
+                        defense,
+                        attack,
+                        hp
+                    )
 
                     lista.add(pro)
                 } while (cursor.moveToNext())
@@ -130,7 +149,7 @@ class ConexionSQL (val miContexto: Context,
     // ACTUALIZAR
     //
 
-    fun actualizarPokemon(po : Pokemon){
+    fun actualizarPokemon(po : PokemonBD){
         try{
             val db = this.writableDatabase
             var cv = ContentValues()
@@ -170,8 +189,8 @@ class ConexionSQL (val miContexto: Context,
     //
     // BUSCAR
     //
-    fun buscarPokemonIdP(id: Int) : Pokemon?{
-        var pro : Pokemon? = null
+    fun buscarPokemonIdP(id: Int) : PokemonBD?{
+        var pro : PokemonBD? = null
         try{
             val db = this.writableDatabase
             var cursor: Cursor? = null
@@ -199,7 +218,25 @@ class ConexionSQL (val miContexto: Context,
                         val attack = cursor.getInt(15)
                         val hp = cursor.getInt(16)
 
-                        pro = Pokemon(id,idP,nombre,imgM,imgF,imgShinyM,imgShinyF,tipo1,tipo2,h1,h2,speed,especialD,especialA,defense,attack,hp)
+                        pro = PokemonBD(
+                            id,
+                            idP,
+                            nombre,
+                            imgM,
+                            imgF,
+                            imgShinyM,
+                            imgShinyF,
+                            tipo1,
+                            tipo2,
+                            h1,
+                            h2,
+                            speed,
+                            especialD,
+                            especialA,
+                            defense,
+                            attack,
+                            hp
+                        )
 
 
                         break
@@ -216,8 +253,8 @@ class ConexionSQL (val miContexto: Context,
     }
 
 
-    fun buscarPokemonId(id: Int) : Pokemon?{
-        var pro : Pokemon? = null
+    fun buscarPokemonId(id: Int) : PokemonBD?{
+        var pro : PokemonBD? = null
         try{
             val db = this.writableDatabase
             var cursor: Cursor? = null
@@ -245,7 +282,25 @@ class ConexionSQL (val miContexto: Context,
                         val attack = cursor.getInt(15)
                         val hp = cursor.getInt(16)
 
-                        pro = Pokemon(id,idP,nombre,imgM,imgF,imgShinyM,imgShinyF,tipo1,tipo2,h1,h2,speed,especialD,especialA,defense,attack,hp)
+                        pro = PokemonBD(
+                            id,
+                            idP,
+                            nombre,
+                            imgM,
+                            imgF,
+                            imgShinyM,
+                            imgShinyF,
+                            tipo1,
+                            tipo2,
+                            h1,
+                            h2,
+                            speed,
+                            especialD,
+                            especialA,
+                            defense,
+                            attack,
+                            hp
+                        )
                         break
                     }
                 } while (cursor.moveToNext())

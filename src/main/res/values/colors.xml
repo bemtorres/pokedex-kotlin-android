@@ -17,4 +17,5 @@
     <color name="colorPokedexRojo">#dc0a2d</color>
     <color name="colorPokedexAzul">#28aafd</color>
     <color name="colorPokedexOscuro">#2b2b2b</color>
+    <color name="icon_tint_normal">#7a7a7a</color>
 </resources>

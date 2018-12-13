@@ -1,6 +1,6 @@
-package win.bemtorres.servicio.pokedex
+package win.bemtorres.servicio.pokedex.modelo
 
-class Pokemon(var id:Int,
+class PokemonBD(var id:Int,
               var idPokemon:Int,
               var nombre: String,
               var imgM: String,
