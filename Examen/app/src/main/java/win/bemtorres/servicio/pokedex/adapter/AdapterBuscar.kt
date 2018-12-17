@@ -49,7 +49,7 @@ class AdapterBuscar: RecyclerView.Adapter<AdapterBuscar.Companion.Holder>, Filte
     override fun onBindViewHolder(holder: Holder, position: Int) {
         var poke : Result
         poke = listaFiltrada.get(position)
-        holder!!.lblNombre.text = poke.name
+        holder!!.lblNombre.text = poke.name.replace("-"," ").capitalize()
         holder!!.lblNumero.text = "#${poke.id}"
         var link = "https://pokeapi.co/media/sprites/pokemon/${poke.id}.png"
         Glide.with(context).load(link).into(holder!!.img)
@@ -87,7 +87,7 @@ class AdapterBuscar: RecyclerView.Adapter<AdapterBuscar.Companion.Holder>, Filte
        return object  : Filter(){
 
            override fun performFiltering(p0: CharSequence?): FilterResults {
-               var texto : String = p0.toString()
+               /*var texto : String = p0.toString()
                if (texto.isEmpty()){
                    listaFiltrada = listaPoke
                }else{
@@ -98,7 +98,8 @@ class AdapterBuscar: RecyclerView.Adapter<AdapterBuscar.Companion.Holder>, Filte
                        }
                    }
                    listaFiltrada = filtroLista
-               }
+               }*/
+               listaFiltrada = ArrayList(listaPoke.filter{poke -> poke.name.contains(p0!!,false)})
                var filterResult : FilterResults = FilterResults()
                filterResult.values = listaFiltrada
                return filterResult

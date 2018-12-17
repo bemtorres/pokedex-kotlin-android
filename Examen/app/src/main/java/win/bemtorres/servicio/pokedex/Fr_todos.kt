@@ -125,20 +125,24 @@ class Fr_todos : Fragment() {
     }
 
     private fun cargado(){
-
-        activity!!.runOnUiThread{
-            listaPoke = ordenar(listaPoke)//ordenada
-            var adapterTodos = AdapterTodos(miContexto!!,listaPoke)
-            rv_todos.layoutManager = GridLayoutManager(miContexto, 3)
-            rv_todos.adapter = adapterTodos
-            if(listaPoke.size>0){
-                progressBar.visibility = View.GONE
-                imgCargando.visibility = View.GONE
-                lblCargado1.visibility = View.GONE
-                lblCargado2.visibility = View.GONE
-                imgBuscar.visibility = View.VISIBLE
+        try{
+            activity!!.runOnUiThread{
+                listaPoke = ordenar(listaPoke)//ordenada
+                var adapterTodos = AdapterTodos(miContexto!!,listaPoke)
+                rv_todos.layoutManager = GridLayoutManager(miContexto, 3)
+                rv_todos.adapter = adapterTodos
+                if(listaPoke.size>0){
+                    progressBar.visibility = View.GONE
+                    imgCargando.visibility = View.GONE
+                    lblCargado1.visibility = View.GONE
+                    lblCargado2.visibility = View.GONE
+                    imgBuscar.visibility = View.VISIBLE
+                }
             }
+        }catch (ex : Exception){
+            Log.e("Cargado", "Error fun cargado")
         }
+
 
 
     }

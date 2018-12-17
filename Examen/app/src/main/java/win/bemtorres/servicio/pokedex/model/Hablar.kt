@@ -15,7 +15,6 @@ class Hablar(val activity: Activity, val message: String) : TextToSpeech.OnInitL
         if (i == TextToSpeech.SUCCESS) {
 
             val localeBR =Locale.getDefault();
-
             val result: Int
             result = tts.setLanguage(localeBR)
 

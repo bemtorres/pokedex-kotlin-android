@@ -49,13 +49,17 @@ class BuscarPokemon : AppCompatActivity(){
 
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
+        toolbar.visibility = View.INVISIBLE
+
         recyclerView = findViewById(R.id.rv_Buscar)
+
         layoutManager =  GridLayoutManager(this, 3)
         recyclerView.layoutManager = layoutManager
 
 
         recyclerView.setHasFixedSize(true)
         obtenerJson()
+
 
 
     }
@@ -174,6 +178,8 @@ class BuscarPokemon : AppCompatActivity(){
             adapterBuscar = AdapterBuscar(lista,this)
 
             recyclerView.adapter = adapterBuscar
+            pb_2.visibility = View.GONE
+            toolbar.visibility = View.VISIBLE
         }
     }
 }
