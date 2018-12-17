@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <string name="salir">Salir</string>
+    <string name="Perfil">Perfil</string>
+
+    <string name="favorito">Favoritos</string>
+    <string name="todos">Pokédex</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="favoritos">Pokemones Favoritos</string>
+
+    <string name="Macho">Macho</string>
+    <string name="Femenino">Femenino</string>
+    <string name="Shiny">Shiny</string>
+    <string name="Shiny2">Shiny Femenino</string>
+    <string name="Img">Imágenes</string>
+    <string name="Actualizar">Sincronizar</string>
+    <string name="Tipo">Tipo</string>
+    <string name="habilidad">Habilidades</string>
+    <string name="status">Estadísticas</string>
+    <string name="buscar">Buscar</string>
+
+    <string name="favor">Pokemon Favorito</string>
+    <string name="carga">Cargando....</string>
+    <string name="speed">Velocidad</string>
+    <string name="special_defense">Defensa Especial</string>
+    <string name="special_attack">Ataque Especial</string>
+    <string name="defense">Defensa</string>
+    <string name="attack">Ataque</string>
+    <string name="hp">HP</string>
+    <string name="total">Total</string>
+    <string name="cargando1">No hay pokemones.</string>
+    <string name="elminar">Eliminar de Favorito</string>
+    <string name="noHay">No hay pokemones favoritos.</string>
+    <string name="cargando2">Por favor actualice listado en el icono de Sincronizar.</string>
+    <string name="anadir">Añadir a favoritos</string>
+    <string name="bienvenido">Examen de Android</string>
+    <string name="alumno1">Sebastian Orrego</string>
+    <string name="alumno2">Benjamin Mora</string>
+
+    <string name="num">#numero</string>
+    <string name="nombre">Nombre</string>
+</resources>

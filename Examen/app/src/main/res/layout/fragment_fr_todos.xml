@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Fr_todos" android:id="@+id/Frame_todo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="@string/todos"
+                    android:layout_width="183dp"
+                    android:layout_height="49dp" android:id="@+id/textView2" android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp" android:textAlignment="center"
+                    android:textSize="24sp" android:textColor="@color/colorPokedexRojo"
+                    android:textStyle="bold"/>
+            <ImageView
+                    android:src="@drawable/c_sincronizar"
+                    android:layout_width="72dp"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:id="@+id/imgSincronizar"
+                    android:contentDescription="@string/Img" android:paddingTop="5dp"/>
+            <ImageView
+                    android:src="@android:drawable/ic_menu_search"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent" android:id="@+id/imgBuscar" android:layout_weight="1"
+                    android:visibility="gone"/>
+        </LinearLayout>
+        <ImageView
+                android:src="@drawable/ic_update2"
+                android:layout_width="match_parent"
+                android:layout_height="276dp" android:id="@+id/imgCargando" android:contentDescription="@string/Img"
+        />
+        <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"/>
+        <TextView
+                android:text="@string/cargando1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/lblCargado1" android:textAlignment="center"
+                android:textSize="18sp"/>
+        <TextView
+                android:text="@string/cargando2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/lblCargado2" android:textAlignment="center"
+                android:textStyle="bold" android:textSize="24sp"/>
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="370dp"
+                android:layout_height="450dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+                android:id="@+id/rv_todos"
+        />
+    </LinearLayout>
+
+</FrameLayout>

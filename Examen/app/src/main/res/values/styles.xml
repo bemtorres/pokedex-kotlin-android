@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPokedexRojo</item>
+        <item name="colorPrimaryDark">@color/colorPokedexRojo</item>
+        <item name="colorAccent">@color/colorPokedexOscuro</item>
+    </style>
+    <style name="AppTheme.appBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPokedexRojo</item>
+        <item name="colorPrimaryDark">@color/colorPokedexRojo</item>
+        <item name="colorAccent">#FFF</item>
+    </style>
+
+</resources>

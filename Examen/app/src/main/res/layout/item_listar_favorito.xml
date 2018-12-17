@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:id="@+id/linear_favorito" android:orientation="vertical"
+              android:clickable="true">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/img_favorito"
+                    android:layout_weight="1"/>
+            <TextView
+                    android:id="@+id/lblNum1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    android:textColor="@color/colorPokedexRojo"
+                    android:textAlignment="viewStart" android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+            <TextView
+                    android:id="@+id/lblNombre1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descripcion "
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="10dp" android:textColor="@color/colorPokedexOscuro"
+                    android:textAlignment="center"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPokedexAmarillo"
+                    android:layout_below="@+id/img_oficial"
+                    android:layout_marginTop="11dp" android:visibility="visible" android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

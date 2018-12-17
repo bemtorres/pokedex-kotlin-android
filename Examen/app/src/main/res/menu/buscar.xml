@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      xmlns:appcompat="http://schemas.android.com/apk/res-auto">
+ <item
+         android:id="@+id/barra_buscador"
+         android:title="@string/buscar"
+         android:icon="@android:drawable/ic_menu_search"
+         android:orderInCategory="100"
+         app:showAsAction="always|collapseActionView"
+         app:iconifiedByDefault="true"
+         appcompat:actionViewClass="android.support.v7.widget.SearchView">
+ </item>
+</menu>

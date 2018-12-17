@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetallePokemonFavorito" android:orientation="vertical">
+    <TextView
+            android:text="@string/favor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView3" android:textStyle="bold"
+            android:textAlignment="center" android:textSize="18sp" android:textColor="@color/icon_tint_normal"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/linear_Contenido" android:visibility="visible">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/img_oficialF"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp" android:contentDescription="@string/Macho"/>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/lblNumF"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textStyle="bold" android:textColor="@color/colorPokedexRojo"
+                        android:text="@string/num"/>
+
+                <TextView
+                        android:id="@+id/lblNombreF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="10dp" android:textColor="@color/colorPokedexOscuro"
+                        android:textSize="24sp" android:text="@string/nombre"/>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp">
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" app:srcCompat="@drawable/c_star" android:id="@+id/imgEliminar"
+                        android:contentDescription="@string/Img"/>
+                <TextView
+                        android:id="@+id/txtAnadir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/elminar"
+                        android:textSize="14sp" android:textAlignment="center"
+                        android:textColor="@color/colorPokedexRojo"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPokedexRojo"
+                android:layout_below="@+id/img_oficial"
+                android:layout_marginTop="20dp" android:id="@+id/espacio"/>
+        <TextView
+                android:text="@string/Img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView4" android:textStyle="bold"
+                android:textAlignment="viewStart" android:textSize="18sp"
+                android:textColor="@color/colorPokedexOscuro"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="center">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/LL_F1">
+                <TextView
+                        android:text="@string/Macho"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/lbl1" android:textSize="15sp"
+                        android:textAlignment="center"/>
+                <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp" app:srcCompat="@drawable/c_pokemongggo"
+                        android:id="@+id/imgF1" android:contentDescription="@string/Img"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/LL_F2" android:visibility="visible">
+                <TextView
+                        android:text="@string/Femenino"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/lbl2" android:textSize="15sp"
+                        android:textAlignment="center"/>
+                <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp" app:srcCompat="@drawable/c_pokemongggo"
+                        android:id="@+id/imgF2" android:contentDescription="@string/Img"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/LL_F3">
+                <TextView
+                        android:text="@string/Shiny"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/lbl3" android:textSize="15sp"
+                        android:textAlignment="center"/>
+                <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp" app:srcCompat="@drawable/c_pokemongggo"
+                        android:id="@+id/imgF3" android:contentDescription="@string/Img"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/LL_F4">
+                <TextView
+                        android:text="@string/Shiny2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/lbl4" android:textSize="15sp"
+                        android:textAlignment="center"/>
+                <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp" app:srcCompat="@drawable/c_pokemongggo"
+                        android:id="@+id/imgF4" android:contentDescription="@string/Img"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPokedexAzul"
+                android:layout_below="@+id/img_oficial"
+                android:layout_marginTop="15dp" android:id="@+id/espacio3"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView11" android:textStyle="bold"
+                android:textAlignment="viewStart" android:textSize="18sp" android:textColor="@color/colorPokedexOscuro"
+                android:text="@string/Tipo"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/lblTipoF1" android:layout_weight="1"
+                    android:textAlignment="center" android:textStyle="bold" android:textSize="18sp"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/lblTipoF2" android:layout_weight="1"
+                    android:textAlignment="center" android:textSize="18sp" android:textStyle="bold"/>
+        </LinearLayout>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPokedexAzul"
+                android:layout_below="@+id/img_oficial"
+                android:layout_marginTop="15dp" android:id="@+id/espacio2"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView5" android:textStyle="bold"
+                android:textAlignment="viewStart" android:textSize="18sp" android:textColor="@color/colorPokedexOscuro"
+                android:text="@string/habilidad"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/lblHabilidadF1" android:layout_weight="1"
+                    android:textStyle="bold" android:textAlignment="center" android:textSize="18sp"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/lblHabilidadF2" android:layout_weight="1"
+                    android:textStyle="bold" android:textAlignment="center" android:textSize="18sp"/>
+        </LinearLayout>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPokedexAzul"
+                android:layout_below="@+id/img_oficial"
+                android:layout_marginTop="15dp" android:id="@+id/espacio4"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView13" android:textStyle="bold"
+                android:textAlignment="viewStart" android:textSize="18sp" android:textColor="@color/colorPokedexOscuro"
+                android:text="@string/status"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:visibility="visible">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/speed"
+                        android:layout_width="59dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView14" android:layout_weight="1"/>
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/lblVelocidadF" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/special_defense"
+                        android:layout_width="59dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView16" android:layout_weight="1"/>
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/lblDefensaEF" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/special_attack"
+                        android:layout_width="59dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView18" android:layout_weight="1"/>
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/lblAtaqueEF" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/defense"
+                        android:layout_width="59dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView20" android:layout_weight="1"/>
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/lblDefensaF" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/attack"
+                        android:layout_width="59dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView22" android:layout_weight="1"/>
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/lblAtaqueF" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/hp"
+                        android:layout_width="59dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView24" android:layout_weight="1"/>
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/lblHpF" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

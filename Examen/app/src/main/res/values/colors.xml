@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    -->
+    <color name="colorPrimary">#2b2b2b</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#dc0a2d</color>
+
+
+    <color name="colorPokedexAmarillo">#ffdf18</color>
+    <color name="colorPokedexVidrio">#a1dafe</color>
+    <color name="colorPokedexVerde">#51ae5f</color>
+    <color name="colorPokedexPlomo">#dedede</color>
+    <color name="colorPokedexRojo">#dc0a2d</color>
+    <color name="colorPokedexAzul">#28aafd</color>
+    <color name="colorPokedexOscuro">#2b2b2b</color>
+    <color name="icon_tint_normal">#7a7a7a</color>
+
+
+    <color name="normal">#a9a878</color>
+    <color name="fire">#f07f2f</color>
+    <color name="water">#6890f0</color>
+    <color name="grass">#78c84f</color>
+    <color name="electric">#f8d030</color>
+    <color name="ice">#98d8d8</color>
+    <color name="fighting">#c22f27</color>
+    <color name="posion">#a43ea1</color>
+    <color name="ground">#e0c069</color>
+    <color name="flying">#a890f0</color>
+    <color name="psychic">#f85888</color>
+    <color name="bug">#a8b821</color>
+    <color name="rock">#b7a038</color>
+    <color name="ghost">#705798</color>
+    <color name="dragon">#6e3af6</color>
+    <color name="dark">#6f5848</color>
+    <color name="steel">#b8b8d0</color>
+    <color name="fairy">#ff9be1</color>
+</resources>
